@@ -349,10 +349,11 @@
     padding: 10px;
 }
 .forward-button{
-
+  border: 1px solid red;
     display: flex;
     flex-direction: row;
     padding-right: 10px;
+
     
 }
 .back-button{
@@ -388,6 +389,7 @@
 .top-bottom-button{
     display: flex;
     flex-direction: column;
+    border: 1px solid red;
 }
 .top{
     margin-top: 0px;
