@@ -424,3 +424,9 @@
     width: 100%;
     color: #fff;
 }
+.output-of-key{
+    border: 1px solid gray;
+    height: 100px;
+    width: 80%;
+    margin: auto;
+}

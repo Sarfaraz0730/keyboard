@@ -11,86 +11,89 @@
 <body>
     <h1 class="heading"> Html + CSS Keyboard</h>
         <br><br>
+        <div class="output-of-key">
+            <h3 id="display"></h3>
+        </div>
 
     <div id="container">
 
         <div class="first-row">
-            <div class="button-layout"><button class="esc">esc</button></div>
-            <div class="button-layout"><button class="esc">F1</button></div>
-            <div class="button-layout"><button class="esc">F2</button></div>
-            <div class="button-layout"><button class="esc">F3</button></div>
-            <div class="button-layout"><button class="esc">F4</button></div>
-            <div class="button-layout"><button class="esc">F5</button></div>
-            <div class="button-layout"><button class="esc">F6</button></div>
-            <div class="button-layout"><button class="esc">F7</button></div>
-            <div class="button-layout"><button class="esc">F8</button></div>
-            <div class="button-layout"><button class="esc">F9</button></div>
-            <div class="button-layout"><button class="esc">F10</button></div>
-            <div class="button-layout"><button class="esc">F11</button></div>
-            <div class="button-layout"><button class="esc">F12</button></div>
-            <div class="button-layout"><button class="esc">pwr</button></div>
+            <div class="button-layout"><button class="esc" onclick="buttonClick('esc')">esc</button></div>
+            <div class="button-layout"><button class="esc" onclick="buttonClick('F1')">F1</button></div>
+            <div class="button-layout"><button class="esc" onclick="buttonClick('F2')">F2</button></div>
+            <div class="button-layout"><button class="esc" onclick="buttonClick('F3')">F3</button></div>
+            <div class="button-layout"><button class="esc" onclick="buttonClick('F4')">F4</button></div>
+            <div class="button-layout"><button class="esc" onclick="buttonClick('F5')">F5</button></div>
+            <div class="button-layout"><button class="esc" onclick="buttonClick('F6')">F6</button></div>
+            <div class="button-layout"><button class="esc" onclick="buttonClick('F7')">F7</button></div>
+            <div class="button-layout"><button class="esc" onclick="buttonClick('F8')">F8</button></div>
+            <div class="button-layout"><button class="esc" onclick="buttonClick('F9')">F9</button></div>
+            <div class="button-layout"><button class="esc" onclick="buttonClick('F10')">F10</button></div>
+            <div class="button-layout"><button class="esc" onclick="buttonClick('F11')">F11</button></div>
+            <div class="button-layout"><button class="esc" onclick="buttonClick('F12')">F12</button></div>
+            <div class="button-layout"><button class="esc" onclick="buttonClick('pwr')">pwr</button></div>
         </div>
 
         <div class="second-row">
-            <div class="button-layout-row2"><button class="tilda-button">` <br>~</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">! <br> 1</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">@ <br> 2</button></div>
-            <div class="button-layout-row2"><button class="tilda-button"> # <br> 3</button></div>
-            <div class="button-layout-row2"><button class="tilda-button"> $ <br>4</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">% <br>5</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">^ <br>6</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">& <br>7</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">* <br>8</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">( <br>9</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">) <br>0</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">_<br>-</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">+ <br>=</button></div>
-            <div id="delete"><button class="delete">Delete</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('~')">` <br>~</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('1')">! <br> 1</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('2')">@ <br> 2</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('3')"> # <br> 3</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('4')"> $ <br>4</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('5')">% <br>5</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('6')">^ <br>6</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('7')">& <br>7</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('8')">* <br>8</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('9')">( <br>9</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('0')">) <br>0</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('-')">_<br>-</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('+')">+ <br>=</button></div>
+            <div id="delete"><button class="delete" onclick="deleteKey()">Delete</button></div>
         </div>
         <!-- row 3rd start -->
         <div class="second-row">
             <div id="delete"><button class="delete">tab</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">Q</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">W</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">E</button></div>
-            <div class="button-layout-row2"><button class="tilda-button"> R</button></div>
-            <div class="button-layout-row2"><button class="tilda-button"> T</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">Y</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">U</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">I</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">O</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">P</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">{ <br> [</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">}<br>]</button></div>
-            <div class="button-layout-row2"><button class="tilda-button">| <br>\</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('Q')">Q</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('W')">W</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('E')">E</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('R')"> R</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('T')"> T</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('Y')">Y</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('U')">U</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('I')">I</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('O')">O</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('P')">P</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('{')">{ <br> [</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('}')">}<br>]</button></div>
+            <div class="button-layout-row2"><button class="tilda-button" onclick="buttonClick('|')">| <br>\</button></div>
         </div>
         <!-- row 3rd ended -->
 
         <div class="fourth-row">
             <div id="caps-lock-and-enter-button"><button class="caps-lock-and-enter-button">caps lock</button></div>
-            <div class="button-layout-row4"><button class="tilda-button">A</button></div>
-            <div class="button-layout-row4"><button class="tilda-button">S</button></div>
-            <div class="button-layout-row4"><button class="tilda-button">D</button></div>
-            <div class="button-layout-row4"><button class="tilda-button"> F</button></div>
-            <div class="button-layout-row4"><button class="tilda-button"> G</button></div>
-            <div class="button-layout-row4"><button class="tilda-button">H</button></div>
-            <div class="button-layout-row4"><button class="tilda-button">J</button></div>
-            <div class="button-layout-row4"><button class="tilda-button">K</button></div>
-            <div class="button-layout-row4"><button class="tilda-button">L</button></div>
-            <div class="button-layout-row4"><button class="tilda-button">: <br>;</button></div>
-            <div class="button-layout-row4"><button class="tilda-button">" <br>'</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick('A')">A</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick('S')">S</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick('D')">D</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick('F')"> F</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick('G')"> G</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick('H')">H</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick('J')">J</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick('K')">K</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick('L')">L</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick(';')">: <br>;</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick('>')">" <br>'</button></div>
             <div id="caps-lock-and-enter-button"><button class="caps-lock-and-enter-button">return</button></div>
         </div>
 
         <div class="fourth-row">
             <div id="shift"><button class="shift">shift</button></div>
-            <div class="button-layout-row4"><button class="tilda-button">Z</button></div>
-            <div class="button-layout-row4"><button class="tilda-button">X</button></div>
-            <div class="button-layout-row4"><button class="tilda-button">C</button></div>
-            <div class="button-layout-row4"><button class="tilda-button"> V</button></div>
-            <div class="button-layout-row4"><button class="tilda-button"> B</button></div>
-            <div class="button-layout-row4"><button class="tilda-button">N</button></div>
-            <div class="button-layout-row4"><button class="tilda-button">M</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick('Z')">Z</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick('X')">X</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick('C')">C</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick('V')"> V</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick('B')"> B</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick('N')">N</button></div>
+            <div class="button-layout-row4"><button class="tilda-button" onclick="buttonClick('M')">M</button></div>
             <div class="button-layout-row4"><button class="tilda-button">
                     < </br>,
                 </button></div>
@@ -132,3 +135,4 @@
 </body>
 
 </html>
+<script src="keyboard.js"></script>
